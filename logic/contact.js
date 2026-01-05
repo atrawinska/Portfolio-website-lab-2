@@ -28,16 +28,18 @@ function validateEmail(text) {
 
 //listen for form submission
 form.addEventListener("submit", function(event) {
-  event.preventDefault();
 
-  // First Name Validation
+  event.preventDefault();
+  let isValid = true;
+
+  //first name validation
   if (!validateName(firstName.value)) {
     showError(firstName, "First name can only contain standard letters");
   } else {
     clearError(firstName);
   }
 
-  // Last Name Validation
+  //last name validation
   if (!validateName(lastName.value)) {
     showError(lastName, "Last name can only contain standard letters");
   } else {
@@ -55,6 +57,18 @@ form.addEventListener("submit", function(event) {
 } else {
   clearError(message);
 }
+
+  if (isValid) {
+    successMessage.textContent = `Thank you ${firstName.value}! I will contact you soon!`;
+
+    //message disappears after 3 seconds
+    setTimeout(() => {
+      successMessage.textContent = "";
+    }, 3000);
+
+    //clearr
+    form.reset();
+  }
 
 
 
@@ -95,3 +109,5 @@ message.addEventListener("input", function() {
 });
 
 
+
+//success message for 3 seconds
