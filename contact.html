@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Contact</title>
   <link rel="stylesheet" href="styling/contact.css">
+  <link rel="stylesheet" href="styling/projects.css">
 </head>
 <body>
 
@@ -59,6 +60,26 @@
 <p id="success-message"></p>
 
 
+
+<h1>My Projects</h1>
+
+<!-- filtering buttons -->
+<div class="filter-buttons">
+  <button class="filter-btn active" data-category="all">All Projects</button>
+  <button class="filter-btn" data-category="Mobile App">Mobile Apps</button>
+  <button class="filter-btn" data-category="Social Projects">Social Projects</button>
+  <button class="filter-btn" data-category="Electronics">Electronics</button>
+</div>
+
+<!-- counter -->
+<p id="project-counter">Showing 0 of 0 projects</p>
+
+<!--  project boxes -->
+<div id="project-container"></div>
+
+
 <script src="logic/contact.js" defer></script>
+<script src="logic/projects.js" defer></script>
+
 </body>
 </html>
