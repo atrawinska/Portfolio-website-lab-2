@@ -8,16 +8,19 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: 30px;  
+  align-items: stretch;
 }
 
 .project-card {
+  display: flex;
+  flex-direction: column;
   width: 300px;
   border: 1px solid var(--border-color);
   background-color: var(--box-color);
   border-radius: 8px;
   padding: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+
 }
 
 .project-card img {
@@ -63,9 +66,10 @@
     background-color: var(--accent-color);
     color: var(--accent-color-two);
     border-radius: 5px;
-    margin-top: 10px;
+
     margin-bottom: 10px;
     text-align: center;
+      margin-top: auto;
 
 }
 
