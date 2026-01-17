@@ -27,6 +27,15 @@
 }
 
 .filter-btn.active {
-  background-color: #0d6efd;
+  background-color: var(--accent-color);
   color: white;
+}
+
+
+.filter-btn {
+  background-color: var(--box-color);
+  color: var(--text-color);
+    border: 0px solid var(--border-color);
+     border-radius: 8px;
+
 }

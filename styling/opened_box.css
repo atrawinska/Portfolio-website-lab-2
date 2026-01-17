@@ -1,0 +1,25 @@
+img {
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 70%;
+
+}
+
+body {
+    margin: 30px;
+}
+
+
+.btn {
+ text-decoration: none;
+    border-radius: 8px;
+      background-color: var(--accent-color);
+      
+    color: var(--accent-color-two);
+    border: 0px solid var(--border-color);
+     border-radius: 8px;
+       padding: 10px;
+
+
+}

@@ -1,9 +1,9 @@
 /*light theme*/
 body {
-  --bg-color: #f4f4f4;
+  --bg-color: #ffffff;
     --box-color: #ffffff;  
   --text-color: #000000;
-  --accent-color: #da58daaf;
+  --accent-color: #9c6f9caf;
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: all 0.3s ease;
@@ -13,7 +13,7 @@ body {
 body.dark-theme {
   --bg-color: #121212cc;
   --text-color: #ffffff;
-  --box-color: #959595;
+  --box-color: #7f7f7f;
   --accent-color: #861e59;
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -21,10 +21,11 @@ body.dark-theme {
 
 /*green theme */
 body.blue-theme {
-  --bg-color: #b5c9b8;
+  --bg-color: #c9e2cd;
   --text-color: #340758;
   --box-color:  #ffffff;  
-  --accent-color: rgb(53, 119, 74)8;
+  --accent-color: #7da183;
+  --accent-color-two: #fff;
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -34,10 +35,12 @@ body.blue-theme {
   padding: 10px 20px;
   margin: 5px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   cursor: pointer;
   background-color: var(--accent-color);
-  color: #fff;
+  color: var(--accent-color-two);
   transition: all 0.3s ease;
 }
 
