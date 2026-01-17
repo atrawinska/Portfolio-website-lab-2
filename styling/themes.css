@@ -8,6 +8,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: all 0.3s ease;
+
 }
 
 /*dark theme */
@@ -17,6 +18,7 @@ body.dark-theme {
   --box-color: #7f7f7f;
   --accent-color: #1757b1;
     --accent-color-two: #fff;
+    --error-color: #5be039;
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -27,6 +29,7 @@ body.blue-theme {
   --text-color: #340758;
   --box-color:  #ffffff;  
   --accent-color: #7da183;
+
   --accent-color-two: #fff;
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -45,6 +48,7 @@ body.blue-theme {
   color: var(--accent-color-two);
   transition: all 0.3s ease;
 }
+
 
 .theme-btn.active {
   outline: 2px solid #000;

@@ -11,55 +11,57 @@
 
 
 <form id="contact-form">
+  <h1>Contact form</h1>
 
   <div class="form-group">
     <label for="firstName">First Name</label>
-    <input type="text" id="firstName">
-    <small class="error"></small>
+    <input  type="text" id="firstName">
+    <small aria-label="Wrong first name input" class="error"></small>
   </div>
 
   <div class="form-group">
     <label for="lastName">Last Name</label>
     <input type="text" id="lastName">
-    <small class="error"></small>
+    <small aria-label="wrong last name input" class="error"></small>
   </div>
 
   <div class="form-group">
     <label for="email">Email</label>
-    <input type="email" id="email">
-    <small class="error"></small>
+    <input  type="email" id="email">
+    <small aria-label="wrong mail input" class="error"></small>
   </div>
 
   <div class="form-group">
     <label for="subject">Subject</label>
-    <select id="subject">
+    <select   id="subject">
       <option value="">Select subject</option>
-      <option value="general">General</option>
-      <option value="Idontknow">Work</option>
-      <option value="Career">School</option>
+      <option  value="general">General</option>
+      <option  value="Idontknow">Work</option>
+      <option  value="Career">School</option>
     </select>
-    <small class="error"></small>
+    <small aria-label="subject needs to be chosen" class="error"></small>
   </div>
 
   <div class="form-group">
     <label for="phone">Phone Number</label>
-    <input type="tel" id="phone">
-    <small class="error"></small>
+    <input  type="tel" id="phone">
+    <small aria-label="wrong phone number" class="error"></small>
   </div>
 
   <div class="form-group">
-    <label for="message">Message</label>
+    <label  for="message">Message</label>
     <textarea id="message"></textarea>
     <div id="char-count">0 / 20 characters</div>
-    <small class="error"></small>
+    <small aria-label="Message is too short." class="error"></small>
   </div>
 
-  <button type="submit">Submit</button>
-  <button type="reset">Clear</button>
+  <button aria-label="Submit" type="submit">Submit</button>
+  <button aria-label="Clear" type="reset">Clear</button>
 
+  <p id="success-message" aria-label="Thank you, I will contact you soon."></p>
 </form>
 
-<p id="success-message"></p>
+
 
 
 <section id="projects">

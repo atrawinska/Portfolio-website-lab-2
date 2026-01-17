@@ -32,12 +32,15 @@ form.addEventListener("submit", function(event) {
   event.preventDefault();
   let isValid = true;
 
+
   //first name validation
   if (!validateName(firstName.value)) {
     showError(firstName, "First name can only contain standard letters");
+
   } else {
     clearError(firstName);
   }
+    isValid = isValid && validateName(firstName.value);
 
   //last name validation
   if (!validateName(lastName.value)) {
@@ -45,18 +48,28 @@ form.addEventListener("submit", function(event) {
   } else {
     clearError(lastName);
   }
+    isValid = isValid && validateName(lastName.value);
 
     if (!validateEmail(email.value)) {
     showError(email, "Email is not in the proper format");
   } else {
     clearError(email);
   }
+    isValid = isValid && validateEmail(email.value);
+
+
+const subjectValid = validateSelect(subject);
+if (!subjectValid) showError(subject, "Choose a subject");
+else clearError(subject);
+isValid = isValid && subjectValid;
+
 
   if (!validateMessage(message.value)) {
   showError(message, "Message must be at least 20 characters");
 } else {
   clearError(message);
 }
+  isValid = isValid && validateMessage(message.value);
 
   if (isValid) {
     successMessage.textContent = `Thank you ${firstName.value}! I will contact you soon!`;
@@ -96,6 +109,13 @@ function validateMessage(msg) {
   return msg.trim().length >= 20;
 }
 
+
+
+function validateSelect(sbj) {
+   return sbj.value !== "";
+}
+
+
 const charCount = document.getElementById("char-count");
 
 message.addEventListener("input", function() {
@@ -106,8 +126,10 @@ message.addEventListener("input", function() {
     charCount.textContent = `${length} / 20 characters`;
     charCount.style.color = length < 20 ? errorColor : validColor; // red if <20, green if >=20
 
-});
+}
 
 
 
-//success message for 3 seconds
+
+);
+
