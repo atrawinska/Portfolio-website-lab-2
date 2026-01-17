@@ -5,6 +5,7 @@ body {
   --text-color: #000000;
   --accent-color: #9c6f9caf;
     --accent-color-two: #fff;
+
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: all 0.3s ease;
@@ -18,7 +19,7 @@ body.dark-theme {
   --box-color: #7f7f7f;
   --accent-color: #1757b1;
     --accent-color-two: #fff;
-    --error-color: #5be039;
+
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -35,7 +36,9 @@ body.blue-theme {
   color: var(--text-color);
 }
 
-/* Buttons inherit accent-color */
+
+
+
 .theme-btn {
   padding: 10px 20px;
   margin: 5px;
@@ -56,4 +59,10 @@ body.blue-theme {
 
 .theme-switcher {
   margin: 30px;
+}
+
+.theme-btn.active {
+  background-color: var(--accent-color);
+  color: var(--accent-color-two);
+  transform: scale(1.05);
 }
