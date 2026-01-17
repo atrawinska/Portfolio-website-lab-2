@@ -1,4 +1,4 @@
-
+//For opening each project in a new page
 
 //take the id
 const urlParams = new URLSearchParams(window.location.search);

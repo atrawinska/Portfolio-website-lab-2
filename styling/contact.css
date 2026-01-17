@@ -1,4 +1,5 @@
-/* Form layout */
+/*This file includes styling for the contact form*/
+
 form {
   max-width: 500px;
   margin: 40px auto;
@@ -27,7 +28,7 @@ input:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: #036800; /* blue */
+  border-color: #036800;
 }
 
 
@@ -87,7 +88,6 @@ input:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  border-color: #0d6efd;
 }
 
 /* Error message */

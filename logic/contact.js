@@ -1,3 +1,5 @@
+//This file validates the contact form input and displays the text for 3 seconds
+
 // Select form and inputs
 const form = document.getElementById("contact-form");
 const firstName = document.getElementById("firstName");
