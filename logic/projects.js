@@ -18,7 +18,7 @@ function displayProjects(projectList) {
       <p>${project.description}</p>
 
       <p><strong>Category:</strong> ${project.category}</p>
-      <a href="${project.link}" target="_blank">View Project</a>
+      <a href="${project.link}" target="_blank" class="btn-view-project">View Project</a>
     `;
     projectContainer.appendChild(card);
   });

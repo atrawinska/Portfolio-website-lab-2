@@ -100,7 +100,27 @@ textarea:focus {
 
 /* Buttons */
 button {
-  padding: 10px 15px;
-  margin-right: 10px;
+  padding: 10px;
   cursor: pointer;
+    padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--accent-color-two);
+
 }
+
+button:hover {
+
+  transition: all 0.3s ease;
+  transform: scale(1.05);
+}
+
+
+
+
+
