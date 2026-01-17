@@ -24,8 +24,11 @@
 }
 
 .project-card img {
-  width: 100%;
+
   border-radius: 5px;
+  object-fit: contain;
+  height: 40%;
+
 }
 
 .project-card:hover {
