@@ -1,0 +1,46 @@
+/*light theme*/
+body {
+  --bg-color: #f4f4f4;
+    --box-color: #ffffff;  
+  --text-color: #000000;
+  --accent-color: #da58daaf;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+/*dark theme */
+body.dark-theme {
+  --bg-color: #121212cc;
+  --text-color: #ffffff;
+  --box-color: #959595;
+  --accent-color: #861e59;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/*green theme */
+body.blue-theme {
+  --bg-color: #b5c9b8;
+  --text-color: #340758;
+  --box-color:  #ffffff;  
+  --accent-color: rgb(53, 119, 74)8;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Buttons inherit accent-color */
+.theme-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.theme-btn.active {
+  outline: 2px solid #000;
+}
