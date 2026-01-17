@@ -1,9 +1,10 @@
 /*light theme*/
 body {
-  --bg-color: #ffffff;
+  --bg-color: #f8f8f8;
     --box-color: #ffffff;  
   --text-color: #000000;
   --accent-color: #9c6f9caf;
+    --accent-color-two: #fff;
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: all 0.3s ease;
@@ -12,9 +13,10 @@ body {
 /*dark theme */
 body.dark-theme {
   --bg-color: #121212cc;
-  --text-color: #ffffff;
+  --text-color: #f0f0f0;
   --box-color: #7f7f7f;
-  --accent-color: #861e59;
+  --accent-color: #1757b1;
+    --accent-color-two: #fff;
   background-color: var(--bg-color);
   color: var(--text-color);
 }
@@ -46,4 +48,8 @@ body.blue-theme {
 
 .theme-btn.active {
   outline: 2px solid #000;
+}
+
+.theme-switcher {
+  margin: 30px;
 }

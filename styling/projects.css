@@ -1,10 +1,13 @@
 
+#projects {
+  margin:30px;
+}
 
 #project-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  
+  padding: 30px;  
 }
 
 .project-card {
@@ -29,7 +32,7 @@
 
 .filter-btn.active {
   background-color: var(--accent-color);
-  color: white;
+  color: var(--accent-color-two);
 }
 
 
@@ -52,6 +55,7 @@
 }
 
 .btn-view-project {
+  display: block;
 
     padding: 10px;
     text-decoration: none;
