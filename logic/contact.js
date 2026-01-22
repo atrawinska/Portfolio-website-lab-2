@@ -124,10 +124,10 @@ const charCount = document.getElementById("char-count");
 
 message.addEventListener("input", function() {
   const length = message.value.length;
-  charCount.textContent = `${length} / 20 characters`;
+  charCount.textContent = `${length} / 40 characters`;
   
   
-    charCount.textContent = `${length} / 20 characters`;
+    charCount.textContent = `${length} / 40 characters`;
     charCount.style.color = length > 40 ? errorColor : validColor; // red if <20, green if >=20
 
 }

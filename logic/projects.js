@@ -1,6 +1,6 @@
 
 
-//locate elements form the main doc
+// elements form the main doc
 const projectContainer = document.getElementById("project-container");
 const filterButtons = document.querySelectorAll(".filter-btn");
 const projectCounter = document.getElementById("project-counter");
@@ -25,19 +25,26 @@ function displayProjects(projectList) {
   projectCounter.textContent = `Showing ${projectList.length} of ${projects.length} projects`;
 }
 
+
+
+
+
 //initial view
 displayProjects(projects);
 
-// Filtering
-filterButtons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    filterButtons.forEach(b => b.classList.remove("active"));
+//the first 4
 
-     btn.classList.add("active");
+displayProjects(projects.slice(0, 4));
 
-    const category = btn.getAttribute("data-category");
-    const filtered = category === "all" ? projects : projects.filter(p => p.category === category);
+// // Filtering
+// filterButtons.forEach(btn => {
+//   btn.addEventListener("click", () => {
+//     filterButtons.forEach(b => b.classList.remove("active"));
 
-    displayProjects(filtered);
-  });
-});
+//      btn.classList.add("active");
+
+
+//     displayProjects(filtered);
+//   });
+// });
+
