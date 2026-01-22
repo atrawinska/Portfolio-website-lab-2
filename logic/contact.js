@@ -107,8 +107,10 @@ function clearError(input) {
   input.style.borderColor = validColor; // green
 }
 
+
+//CHANGE to up to 40 char, instead of minimum of 20
 function validateMessage(msg) {
-  return msg.trim().length >= 20;
+  return msg.trim().length <= 40;
 }
 
 
@@ -126,7 +128,7 @@ message.addEventListener("input", function() {
   
   
     charCount.textContent = `${length} / 20 characters`;
-    charCount.style.color = length < 20 ? errorColor : validColor; // red if <20, green if >=20
+    charCount.style.color = length > 40 ? errorColor : validColor; // red if <20, green if >=20
 
 }
 
